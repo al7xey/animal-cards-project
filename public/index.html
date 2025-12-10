@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Каталог карточек животных, управляемый Express.js API.">
+    <title>🏡 Питомник "Express Animals" | Каталог</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Питомник "Express Animals" 🐾</h1>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <div class="form-container">
+                <h3>Зарегистрировать новое животное</h3>
+                <form id="addForm">
+                    <input type="text" id="name" name="name" placeholder="Имя (обязательно)" required aria-label="Имя животного">
+                    <input type="text" id="species" name="species" placeholder="Вид (cat, dog, parrot...)" required aria-label="Вид животного">
+                    <input type="text" id="description" name="description" placeholder="Краткое описание или особенности" aria-label="Описание животного">
+                    <button type="submit">Добавить в каталог</button>
+                </form>
+            </div>
+        </section>
+        <section class="cards-section">
+            <h2>Наши питомцы в каталоге</h2>
+            <div id="cards-container">
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Express Animals Project. Backend на Node.js и Express.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
